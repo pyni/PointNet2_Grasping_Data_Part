@@ -11,6 +11,11 @@ Single object dataset:
 Link：https://pan.baidu.com/s/1_prfq4A_Dg9kREqpc3Cikw 
 Password：j7zn  
 
+
+![Single object dataset](https://github.com/pyni/PointNet-_Grasping_Data_Part/blob/master/figure1.png)
+
+
+
 Multi-object dataset:
 Comming soon
 
