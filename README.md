@@ -5,6 +5,8 @@ This is the dataset part for our accepted ICRA 2020 paper:
 
 PointNet++ Grasping: Learning An End-to-end Spatial Grasp Generation Algorithm from Sparse Point Clouds
 
+Video：https://www.youtube.com/watch?v=AfU7npscnZ0
+
 
 Single object dataset:
 
