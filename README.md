@@ -17,5 +17,6 @@ Password：j7zn
 ![Single object dataset](https://github.com/pyni/PointNet-_Grasping_Data_Part/blob/master/figure1.png)
 
  
-Visualization code :
-Comming soon 
+The code is to visualize the performance of Single-object Grasp Planning.
+We refer dexnet(https://berkeleyautomation.github.io/dex-net/)
+
