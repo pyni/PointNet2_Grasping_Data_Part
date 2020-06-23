@@ -8,7 +8,7 @@ PointNet++ Grasping: Learning An End-to-end Spatial Grasp Generation Algorithm f
 Video：https://www.youtube.com/watch?v=AfU7npscnZ0
 
 
-Single object dataset:
+Dataset:
 
 Link：https://pan.baidu.com/s/1_prfq4A_Dg9kREqpc3Cikw 
 Password：j7zn  
@@ -16,13 +16,6 @@ Password：j7zn
 
 ![Single object dataset](https://github.com/pyni/PointNet-_Grasping_Data_Part/blob/master/figure1.png)
 
-
-
-Multi-object dataset:
-Comming soon
-
+ 
 Visualization code :
-Comming soon
-
-
-Because of coronavirus, we are unable to return back to the school. Data will be uploaded later.
+Comming soon 
