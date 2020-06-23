@@ -14,7 +14,7 @@ Link：https://pan.baidu.com/s/1_prfq4A_Dg9kREqpc3Cikw
 Password：j7zn  
 
 
-![Single object dataset](https://github.com/pyni/PointNet-_Grasping_Data_Part/blob/master/figure1.png)
+![Single object dataset](https://github.com/pyni/PointNet2_Grasping_Data_Part/tree/master/figures/figure1.png)
 
  
 The code is to visualize the performance of Single-object Grasp Planning.
