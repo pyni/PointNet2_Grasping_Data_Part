@@ -13,7 +13,7 @@ Dataset:
 Link：https://pan.baidu.com/s/1_prfq4A_Dg9kREqpc3Cikw 
 Password：j7zn  
 
-![image](https://github.com/pyni/PointNet2_Grasping_Data_Part/blob/master/figures/figure.png)
+![image](https://github.com/pyni/PointNet2_Grasping_Data_Part/blob/master/figures/figure1.png)
   
 The code is to visualize the performance of Single-object Grasp Planning.
 We refer dexnet(https://berkeleyautomation.github.io/dex-net/)
