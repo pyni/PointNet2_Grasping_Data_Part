@@ -28,3 +28,4 @@ We refer dexnet(https://berkeleyautomation.github.io/dex-net/)
 
 ![image4](https://github.com/pyni/PointNet2_Grasping_Data_Part/blob/master/figures/sub2.png)
 
+, Where the blue grasp denotes the major grasp, and the rest are supplementary grasps
