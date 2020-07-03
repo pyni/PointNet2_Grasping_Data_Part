@@ -23,3 +23,8 @@ We refer dexnet(https://berkeleyautomation.github.io/dex-net/)
 ![image2](https://github.com/pyni/PointNet2_Grasping_Data_Part/blob/master/figures/positive%2Bnegative.png)
 
 ## Case 2: Show the supplementary grasps
+
+![image3](https://github.com/pyni/PointNet2_Grasping_Data_Part/blob/master/figures/sub1.png)
+
+![image4](https://github.com/pyni/PointNet2_Grasping_Data_Part/blob/master/figures/sub2.png)
+
