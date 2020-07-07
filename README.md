@@ -20,6 +20,8 @@ We refer dexnet(https://berkeleyautomation.github.io/dex-net/)
 
 The installation method is the same with dexnet (https://berkeleyautomation.github.io/dex-net/install/install.html)
 
+You can run show show_labels.py to get the following cases:
+
 ## Case 1: Show all the major grasps
 
 ![image2](https://github.com/pyni/PointNet2_Grasping_Data_Part/blob/master/figures/positive%2Bnegative.png)
