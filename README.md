@@ -18,7 +18,7 @@ Password：j7zn
 The code is to visualize the performance of Single-object Grasp Planning.
 We refer dexnet(https://berkeleyautomation.github.io/dex-net/)
 
-The installation method is the same with dexnet ()
+The installation method is the same with dexnet (https://berkeleyautomation.github.io/dex-net/install/install.html)
 
 ## Case 1: Show all the major grasps
 
