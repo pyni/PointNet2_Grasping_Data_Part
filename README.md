@@ -18,6 +18,8 @@ Password：j7zn
 The code is to visualize the performance of Single-object Grasp Planning.
 We refer dexnet(https://berkeleyautomation.github.io/dex-net/)
 
+The installation method is the same with dexnet ()
+
 ## Case 1: Show all the major grasps
 
 ![image2](https://github.com/pyni/PointNet2_Grasping_Data_Part/blob/master/figures/positive%2Bnegative.png)
