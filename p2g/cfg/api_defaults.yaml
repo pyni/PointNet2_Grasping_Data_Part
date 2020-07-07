@@ -1,0 +1,211 @@
+# Grasping params (relative paths for gripper_dir and cache_dir are resolved relative to dex-net root)
+gripper_dir: data/grippers
+cache_dir:
+
+# Object gen params
+path_to_sdfgen: SDFGen
+sdf_dim: 100
+sdf_padding: 5
+stp_min_prob: 0.01
+
+use_default_mass: True
+default_mass: 0.1 
+obj_density: 4000.0 
+
+use_uniform_com: True
+
+rescale_objects: True
+obj_target_scale: 0.040
+obj_scaling_mode: min
+gravity_accel: 9.8
+
+
+
+
+# Visualization params
+show_gripper: False
+max_plot_gripper: 5000 
+min_metric:  -0.001
+table_extent: 0.15
+animate: False
+ 
+
+
+grasp_sampler: antipodal
+target_num_grasps: 800
+num_grasp_rots: 32 #用不到，因为sample_approach_angles为False
+
+sampling_friction_coef: 0.2
+num_cone_faces: 8 
+max_grasp_sampling_iters: 16
+grasp_samples_per_surface_point: 2
+max_num_surface_points: 100
+min_contact_dist: 0.00 
+dir_prior: 1.0
+
+
+
+# Object export params
+export_format: obj
+export_scale: 1.0
+export_overwrite: True
+
+# Metric params
+quality_scale: 0.3
+metric_display_rate: 10
+# Metric params. Ignore this unless you really know what you're doing 
+metrics:
+  ferrari_canny:
+    # required parameters
+    quality_method: ferrari_canny_L1
+    friction_coef: 0.24
+    num_cone_faces: 8
+    soft_fingers: 1
+    quality_type: quasi_static
+    all_contacts_required: 1
+    check_approach: False
+    
+    # optional deterministic parameters
+#这个是否要设置？？ 好像程序中默认为25左右
+    #torque_scaling:1000000. #1000.0   
+    wrench_norm_thresh: 0.001
+    wrench_regularizer: 0.0000000001
+    
+    # PARAMS for robust grasp metrics
+    # uncertainty
+    grasp_uncertainty:
+      sigma_grasp_trans_x: 0.0005 #这个值不能太大，否则物体或抓手会偏的非常厉害
+      sigma_grasp_trans_y: 0.0005
+      sigma_grasp_trans_z: 0.0005
+      sigma_grasp_rot_x: 0.0001
+      sigma_grasp_rot_y: 0.0001
+      sigma_grasp_rot_z: 0.0001
+      num_prealloc_samples: 0
+    obj_uncertainty:
+      sigma_obj_trans_x: 0.0001
+      sigma_obj_trans_y: 0.0001
+      sigma_obj_trans_z: 0.0001
+      sigma_obj_rot_x: 0.0001
+      sigma_obj_rot_y: 0.0001
+      sigma_obj_rot_z: 0.0001
+      sigma_obj_scale: 0.00
+      num_prealloc_samples: 10
+    params_uncertainty:
+      sigma_friction_coef: 0.1
+      num_prealloc_samples: 0
+
+    # sampling params
+    num_quality_samples: 5
+    sampling_snapshot_rate: 10
+
+
+
+  wrench_resistance:
+    # required parameters
+    quality_method: wrench_resistance
+    friction_coef: 0.4
+    num_cone_faces: 8
+    soft_fingers: 1
+    quality_type:  quasi_static
+    all_contacts_required: 1
+    check_approach: False
+
+    # optional deterministic parameters
+#这个是否要设置？？ 好像程序中默认为25左右
+    torque_scaling: 100.0   
+    wrench_norm_thresh: 0.001
+    wrench_regularizer: 0.0000000001
+    
+    # PARAMS for robust grasp metrics
+    # uncertainty
+    grasp_uncertainty:
+      sigma_grasp_trans_x: 0.0005 #这个值不能太大，否则物体或抓手会偏的非常厉害
+      sigma_grasp_trans_y: 0.0005
+      sigma_grasp_trans_z: 0.0005
+      sigma_grasp_rot_x: 0.0001
+      sigma_grasp_rot_y: 0.0001
+      sigma_grasp_rot_z: 0.0001
+      num_prealloc_samples: 0
+    obj_uncertainty:
+      sigma_obj_trans_x: 0.0001
+      sigma_obj_trans_y: 0.0001
+      sigma_obj_trans_z: 0.0001
+      sigma_obj_rot_x: 0.0001
+      sigma_obj_rot_y: 0.0001
+      sigma_obj_rot_z: 0.0001
+      sigma_obj_scale: 0.00
+      num_prealloc_samples: 10
+    params_uncertainty:
+      sigma_friction_coef: 0.1
+      num_prealloc_samples: 0
+
+    # sampling params
+    num_quality_samples: 5
+    sampling_snapshot_rate: 10
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  force_closure:
+    quality_method: force_closure
+    friction_coef: 0.4
+    num_cone_faces: 8
+    soft_fingers: 0
+    quality_type: quasi_static    
+    all_contacts_required: 1
+    check_approach: True
+
+    # optional deterministic parameters
+    torque_scaling: 0.01
+    wrench_norm_thresh: 0.001
+    wrench_regularizer: 0.0000000001
+
+  show:
+    quality_method: force_closure
+    friction_coef: 0.2
+    num_cone_faces: 8
+    soft_fingers: 0
+    quality_type: quasi_static    
+    all_contacts_required: 1
+    check_approach: False
+
+    # optional deterministic parameters
+    torque_scaling: 0.01
+    wrench_norm_thresh: 0.001
+    wrench_regularizer: 0.0000000001
+  robust_wrench_resistance_pose_0: notset
+  robust_wrench_resistance_pose_1: notset
+  robust_wrench_resistance_pose_2: notset
+  robust_wrench_resistance_pose_3: notset
+  robust_wrench_resistance_pose_4: notset
+  robust_wrench_resistance_pose_5: notset
+  robust_wrench_resistance_pose_6: notset
+  robust_wrench_resistance_pose_7: notset
+  wrench_resistance_pose_0: notset
+  wrench_resistance_pose_1: notset
+  wrench_resistance_pose_2: notset
+  wrench_resistance_pose_3: notset
+  wrench_resistance_pose_4: notset
+  wrench_resistance_pose_5: notset
+  wrench_resistance_pose_6: notset
+  wrench_resistance_pose_7: notset
+  wrench_resistance_pose_18: notset
+  wrench_resistance_pose_19: notset
+  wrench_resistance_pose_20: notset
+  wrench_resistance_pose_21: notset
+  show_pose_0: notset
+  show_pose_1: notset
+  show_pose_2: notset
